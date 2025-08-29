@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Med Busq</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cerrar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-3">
+        <!--Contenido de la pagina-->
+        <div class="row">
+            <!--Barra lateral-->
+            <div class="col-md-3">
+                <div class="input-group mb-3" style="width: fit-content;">
+                    <input type="text" class="form-control" placeholder="Medicamento" aria-label="Med Search"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search">Busqueda</button>
+                </div>
+                <div>
+                    <h4>Busqueda por clasificacion</h4>
+                    <!--Al usar estos enlaces, el contenido central debiera rellenarse con los medicamentos de esa familia-->
+                    <ul>
+                        <a href="">
+                            <li>Analgesicos y Antiinflamatorios</li>
+                        </a>
+                        <a href="">
+                            <li>Antibioticos</li>
+                        </a>
+                        <a href="">
+                            <li>Antidepresivos y Ansioliticos</li>
+                        </a>
+                        <a href="">
+                            <li>Antihistaminicos</li>
+                        </a>
+                        <a href="">
+                            <li>Antivirales</li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+            <!--Contenedor del centro-->
+
+            <div class="col-md-8">
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="contenedor">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.NNb9RyxJ3Wj8hFUeIFkx2wHaHa%3Fpid%3DApi&f=1&ipt=3b6a539acec2708c7343093b9daf92688c1c17aaa2ddcaf6b22bc414ff535e55&ipo=images"
+                                class="card-img-top mx-auto" style="width: 250px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Paracetamol</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.QWFpUXGS4sJKKx8z7d8gRgHaHa%3Fr%3D0%26cb%3Dthfvnext%26pid%3DApi&f=1&ipt=56f335da9f7b7a9b5f654c2e20fc00132a508511533a347c26ecb9b1eddf44f8&ipo=images"
+                                class="card-img-top mx-auto" style="width: 250px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Aciclovir</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.6eFFECtyZf85ZQCH_CItpQHaHa%3Fpid%3DApi&f=1&ipt=17459a6d125757e689f03527feedc204960f7ae8a5caa06f2a08c9d1c68e4f0d&ipo=images"
+                                class="card-img-top mx-auto" style="width: 250px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Aspirina</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.WP33XbzrLiqdPShMhyT8HQHaHa%3Fpid%3DApi&f=1&ipt=e2a21f13bf974e5a9907cb46fab8f0aea27a85e4c0a596e9216f38cfa3046c9b&ipo=images"
+                                class="card-img-top mx-auto" style="width: 250px;" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tapsin</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-1">
+                <p>prueba</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="static/js/index.js"></script>
+</body>
+
+</html>
